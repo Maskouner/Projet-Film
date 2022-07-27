@@ -259,6 +259,12 @@ android {
     }
 }
 
+project.ext.vectoricons = [
+    iconFontNames: [ 'MaterialIcons.ttf', 'icomoon.ttf' , 'EvilIcons.ttf', 'Entypo.ttf', 'FontAwesome.ttf', 'Foundation.ttf', 'Ionicons.ttf', 'MaterialCommunityIcons.ttf', 'Octicons.ttf', 'Zocial.ttf', 'Fontisto.ttf' ],
+]
+
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
 
